@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-
+import { Post } from '../interface/post.interface';
 import { ServicesService } from '../service/services.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { ServicesService } from '../service/services.service';
 })
 export class FormularioComponent implements OnInit {
 
-
+  newPost: Post[];
   formulario: FormGroup;
 
 

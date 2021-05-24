@@ -1,4 +1,4 @@
-<div class="container card">
+<div class="container card m-3">
     <form class="form-group mt-3" [formGroup]="formulario" (ngSubmit)="onSubmit()">
         <div>
             <label class="form-label">Título</label>
@@ -21,6 +21,6 @@
             <label class="form-label">Categoria</label>
             <input type="text" class="form-control" placeholder="Categoria" formGroupName="categoria">
         </div>
-        <button class="btn btn-success m-3">Añadir post</button>
+        <button class="btn btn-outline-primary m-3">Añadir post</button>
     </form>
 </div>
