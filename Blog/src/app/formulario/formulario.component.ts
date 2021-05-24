@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Post } from '../interface/post.interface';
-import { ServicesService } from '../service/services.service';
 
+import { ServicesService } from '../service/services.service';
 
 @Component({
   selector: 'app-formulario',
@@ -11,7 +10,7 @@ import { ServicesService } from '../service/services.service';
 })
 export class FormularioComponent implements OnInit {
 
-  newPost: Post[];
+
   formulario: FormGroup;
 
 
@@ -30,11 +29,11 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   onSubmit() {
-    this.newPost = this.formulario.value;
-    console.log(this.newPost);
 
+    this.serviceServices.agregarPost(this.formulario.value);
+
+    return this.formulario.reset();
   }
 
 }

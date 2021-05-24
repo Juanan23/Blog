@@ -87,6 +87,7 @@ export class ServicesService {
 
 
   agregarPost(post: Post) {
+    this.arrPosts.push(post);
 
   }
 
