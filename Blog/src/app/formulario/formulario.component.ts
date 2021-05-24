@@ -31,6 +31,9 @@ export class FormularioComponent implements OnInit {
 
   onSubmit() {
 
+    this.formulario.value.fecha = new Date();
+    console.log(this.formulario.value);
+
     this.serviceServices.agregarPost(this.formulario.value);
 
     return this.formulario.reset();
